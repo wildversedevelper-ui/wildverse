@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover WILDVERSE, an upcoming open-world creature exploration and survival game. Explore mysterious islands, discover creatures and follow development.">
+  <meta name="theme-color" content="#08111b">
+  <title>WILDVERSE | Enter a New World</title>
+  <style>
+    :root { --bg:#08111b; --panel:#101e2a; --text:#f4f7fa; --muted:#b6c4d0; --accent:#9bd36a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+    a { color:inherit; }
+    .hero { min-height:92vh; display:flex; align-items:center; background:linear-gradient(90deg,rgba(4,10,16,.94),rgba(4,10,16,.56)),url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=85') center/cover; padding:32px 7%; }
+    nav { position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:22px 7%; background:rgba(5,12,19,.45); }
+    .brand { font-size:1.35rem; font-weight:900; letter-spacing:.18em; }
+    nav a { text-decoration:none; color:#e5edf3; margin-left:22px; font-size:.92rem; }
+    .hero-content { max-width:720px; padding-top:50px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.18em; text-transform:uppercase; font-size:.78rem; }
+    h1 { font-size:clamp(3rem,9vw,6.4rem); line-height:.98; margin:16px 0; letter-spacing:-.045em; }
+    h2 { font-size:clamp(2rem,5vw,3.2rem); line-height:1.1; margin:8px 0 18px; }
+    p { color:var(--muted); }
+    .hero p { font-size:1.12rem; max-width:590px; }
+    .button { display:inline-block; margin-top:18px; padding:13px 22px; border-radius:5px; background:var(--accent); color:#10200b; font-weight:800; text-decoration:none; }
+    .status { display:inline-block; border:1px solid rgba(155,211,106,.55); color:var(--accent); border-radius:30px; padding:6px 12px; font-size:.82rem; margin-top:16px; }
+    section { padding:82px 7%; }
+    .intro { max-width:760px; margin-bottom:32px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:var(--panel); border:1px solid #203343; border-radius:10px; overflow:hidden; }
+    .card img { width:100%; height:190px; object-fit:cover; display:block; }
+    .card div { padding:20px; }
+    .card h3 { margin:0 0 8px; font-size:1.2rem; }
+    .vision { background:linear-gradient(120deg,#142638,#0b1722); }
+    .vision-inner { max-width:850px; }
+    .contact { text-align:center; background:#0d1924; }
+    .contact p { max-width:600px; margin:0 auto; }
+    .links { display:flex; justify-content:center; flex-wrap:wrap; gap:14px; margin-top:24px; }
+    .links a { border:1px solid #3b5364; border-radius:6px; padding:11px 17px; text-decoration:none; }
+    footer { padding:24px 7%; color:#8394a2; border-top:1px solid #1d2b37; font-size:.85rem; text-align:center; }
+    @media(max-width:720px) {
+      nav { padding:18px 6%; }
+      nav .navlinks { display:none; }
+      .hero { min-height:85vh; padding:28px 6%; }
+      section { padding:64px 6%; }
+      .cards { grid-template-columns:1fr; }
+      .card img { height:210px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav>
+      <div class="brand">WILDVERSE</div>
+      <div class="navlinks"><a href="#about">About</a><a href="#world">The World</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero-content">
+      <div class="eyebrow">A new world is waiting</div>
+      <h1>ENTER THE<br>WILDVERSE.</h1>
+      <p>Explore mysterious islands, discover extraordinary creatures and build your own adventure on a newly discovered world.</p>
+      <a class="button" href="#about">DISCOVER THE PROJECT</a>
+      <div><span class="status">IN DEVELOPMENT</span></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="intro">
+      <div class="eyebrow">The project</div>
+      <h2>More than a world. A whole new adventure.</h2>
+      <p>WILDVERSE is an independent open-world game project inspired by exploration, survival and the excitement of discovering incredible creatures. Follow its journey as the world takes shape.</p>
+    </div>
+    <div class="cards" id="world">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape">
+        <div><h3>Explore New Islands</h3><p>Travel across varied landscapes and uncover the secrets of a mysterious planet.</p></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Lush forest">
+        <div><h3>Discover Creatures</h3><p>Meet a growing world of unique creatures, each with its own character.</p></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Open landscape at sunset">
+        <div><h3>Shape Your Adventure</h3><p>Explore, grow stronger and experience the world at your own pace.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="vision">
+    <div class="vision-inner">
+      <div class="eyebrow">Our vision</div>
+      <h2>Built step by step. Dreamed on a bigger scale.</h2>
+      <p>WILDVERSE is currently being developed for Android-focused, mobile-optimised gameplay. Features and plans may evolve during development. This website will share genuine progress, new ideas and future announcements.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="eyebrow">Follow the journey</div>
+    <h2>Stay connected with WILDVERSE.</h2>
+    <p>Follow development updates on Instagram or contact the project by email.</p>
+    <div class="links">
+      <!-- Replace the two placeholder links below with your real Instagram and project Gmail. -->
+      <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:YOUR_PROJECT_EMAIL@gmail.com">Email the developer ↗</a>
+    </div>
+  </section>
+
+  <footer>© 2026 WILDVERSE Project. An independent game project in development.</footer>
+</body>
+</html>
